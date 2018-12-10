@@ -1,3 +1,13 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #1fa2ff;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #1fa2ff, #12d8fa, #a6ffcb);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #1fa2ff, #12d8fa, #a6ffcb);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 h1 {
   background: #2980b9;
   color: white;
@@ -14,20 +24,6 @@ ul {
   padding: 0;
 }
 
-.fa-plus {
-  float: right;
-}
-
-body {
-  font-family: 'Roboto', sans-serif;
-  background: #1fa2ff;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #1fa2ff, #12d8fa, #a6ffcb);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #1fa2ff, #12d8fa, #a6ffcb);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
 li {
   background: white;
   height: 40px;
@@ -37,6 +33,11 @@ li {
 
 li:nth-child(2n) {
   background: #f7f7f7;
+}
+
+li:hover span {
+  width: 40px;
+  opacity: 1.0;
 }
 
 span {
@@ -51,9 +52,8 @@ span {
   opacity: 0;
 }
 
-li:hover span {
-  width: 40px;
-  opacity: 1.0;
+.fa-plus {
+  float: right;
 }
 
 input {
